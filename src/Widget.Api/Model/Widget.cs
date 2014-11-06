@@ -23,5 +23,11 @@ namespace Widget.Api.Model
         {
             return JsonConvert.SerializeObject(this);
         }
+
+        public static Widget FromBytes(byte[] bytes)
+        {
+            var json = Encoding.UTF8.GetString(bytes);
+            return JsonConvert.DeserializeObject<Widget>(json);
+        }
     }
 }
