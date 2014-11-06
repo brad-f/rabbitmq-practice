@@ -16,3 +16,5 @@ C:\Users\Brad\Documents\GitHub\rabbitmq-practice\src\Widget.Api\Widget.Api\bin\D
 C:\Users\Brad\Documents\GitHub\rabbitmq-practice\src\Widget.Api\Widget.Api\bin\Debug\Microsoft.Owin.Hosting.dll
 C:\Users\Brad\Documents\GitHub\rabbitmq-practice\src\Widget.Api\Widget.Api\bin\Debug\Microsoft.Owin.xml
 C:\Users\Brad\Documents\GitHub\rabbitmq-practice\src\Widget.Api\Widget.Api\bin\Debug\Microsoft.Owin.Hosting.xml
+C:\Users\Brad\Documents\GitHub\rabbitmq-practice\src\Widget.Api\Widget.Api\bin\Debug\RabbitMQ.Client.dll
+C:\Users\Brad\Documents\GitHub\rabbitmq-practice\src\Widget.Api\Widget.Api\bin\Debug\RabbitMQ.Client.xml
