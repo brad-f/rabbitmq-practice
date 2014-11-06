@@ -13,9 +13,10 @@ namespace Widget.Api.Model
             var connection = factory.CreateConnection();
             var model = connection.CreateModel();
 
-            var response = model.QueueDeclare("widget", true, false, false, null);
+            model.QueueDeclare("widget", true, false, false, null);
+            model.BasicPublish(string.Empty, "widget", null, widget.GetBytes());
 
-            Console.WriteLine("Widget");
+            Console.WriteLine(widget.ToJson());
         }
     }
 }
