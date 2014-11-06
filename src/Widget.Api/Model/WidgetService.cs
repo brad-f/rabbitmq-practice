@@ -10,11 +10,12 @@ namespace Widget.Api.Model
             ConnectionFactory factory = new ConnectionFactory();
             factory.HostName = "192.168.50.4";
 
-            var connection = factory.CreateConnection();
-            var model = connection.CreateModel();
-
-            model.QueueDeclare("widget", true, false, false, null);
-            model.BasicPublish(string.Empty, "widget", null, widget.GetBytes());
+            using(var connection = factory.CreateConnection())
+            using(var model = connection.CreateModel())
+            { 
+                model.QueueDeclare("widget", true, false, false, null);
+                model.BasicPublish(string.Empty, "widget", null, widget.GetBytes());
+            }
 
             Console.WriteLine(widget.ToJson());
         }
